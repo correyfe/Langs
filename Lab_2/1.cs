@@ -6,21 +6,19 @@ class Program
     {
         Console.Write("Enter x: ");
         int x = int.Parse(Console.ReadLine());
-        int func;
 
         if (x <= 3)
         {
-            func = (7 * x) + 25; 
+            Console.WriteLine((7 * x) + 25);
         }
         else if (x > 3 && x <= 80)
         {
-            func = x * x;
+            Console.WriteLine(x * x);
         }
         else
         {
-            func = -1 * (x * x);
+            Console.WriteLine(-1 * (x * x));
         }
 
-        Console.WriteLine(func);
     }
 }
